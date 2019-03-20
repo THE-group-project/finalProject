@@ -60,7 +60,7 @@ class NavBar extends Component {
       </ul>
     );
     return (
-      <nav className="navbar navbar-expand-sm navbar-light bg-white mb-4">
+      <nav className="navbar navbar-expand-sm navbar-dark">
         <div className="container">
           <Link className="navbar-brand" to="/">
             FITNESS

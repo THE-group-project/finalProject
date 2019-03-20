@@ -1,3 +1,38 @@
 * {
     color: black;
 }
+
+img {
+    width: 100%;
+}
+  
+.landing {
+    position: relative;
+    background: url("./images/LongrunFEATURE.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 7.5rem);
+    /* min-height: 450px; */
+    /* margin-top: -24px; */
+    /* margin-bottom: -50px; */
+}
+
+/* .landing-inner {
+    background-color: grey;
+    margin: 40px 100px 40px 100px;
+} */
+
+.navbar {
+    background-color: black;
+}
+
+.jumbotron {
+    /* display: block; */
+    /* width: 1000px; */
+    background: rgb(184, 199, 207); /* This is for ie8 and below */
+    background: rgba(184, 199, 207, 0.8); 
+}
+
+footer {
+    background-color: #F64C72;
+}
