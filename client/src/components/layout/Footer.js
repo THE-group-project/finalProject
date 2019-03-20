@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => {
   return (
-    <footer className="bg-white text-secondary mt-5 p-4 text-center">
+    <footer className="text-dark p-4 text-center">
       Copyright &copy; {new Date().getFullYear()} Ferrin's Angels 😇
     </footer>
   );
