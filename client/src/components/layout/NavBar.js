@@ -60,13 +60,13 @@ class NavBar extends Component {
       </ul>
     );
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark">
+      <nav className="navbar navbar-expand-sm mb-5">
         <div className="container">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand mt-1" to="/">
             FITNESS
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler navbar-dark"
             type="button"
             data-toggle="collapse"
             data-target="#mobile-nav"

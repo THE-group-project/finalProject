@@ -15,24 +15,30 @@ class Landing extends Component {
       <div className="landing">
         <div className="dark-overlay landing-inner text-light">
           <div className="container">
-              <div className="jumbotron">
-                    <div className="col-md-12 text-center">
-                      <div className="title_tagline">
-                        <h1 className="display-3 mb-4">FitMi</h1>
-                        <p className="lead">
-                          {' '}
-                          Find your training buddy!
+            <div className="row">
+              <div className="jumbotron-fluid mx-auto border-0 rounded-0">
+                <div className="col-md-12 text-center">
+                  <div className="title_tagline">
+                    <h1 className="display-3 title">FITNESS</h1>
+                    <p className="lead tagline mb-4">
+                      {' '}
+                      Find your training buddy!
                         </p>
-                      </div>
-                      <Link to="/signup" className="btn btn-lg btn-outline mr-2">
-                        Sign Up
+                  </div>
+                  <Link to="/signup" className="btn btn-lg btn-outline-warning mr-2">
+                    Sign Up
                       </Link>
-                      <Link to="/login" className="btn btn-lg">
-                        Login
+                  <Link to="/login" className="btn btn-lg btn-outline-dark">
+                    Login
                       </Link>
-                    </div>
                 </div>
-            
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+
           </div>
         </div>
       </div>
