@@ -51,7 +51,7 @@ class Login extends Component {
             <div className="col-md-8 m-auto">
               <h1 className="display-4">Log In</h1>
               <p className="lead">
-                Sign in to your Profile
+                Sign in to your site
               </p>
               <form onSubmit={this.onSubmit}>
                 <TextField

@@ -15,11 +15,10 @@ class Landing extends Component {
       <div className="landing">
         <div className="dark-overlay landing-inner text-light">
           <div className="container">
-            <div className="row">
-              <div className="jumbotron mx-auto border-0 rounded-0">
+              <div className="jumbotron">
                     <div className="col-md-12 text-center">
                       <div className="title_tagline">
-                        <h1 className="display-3 mb-4">FitMii</h1>
+                        <h1 className="display-3 mb-4">FitMi</h1>
                         <p className="lead">
                           {' '}
                           Find your training buddy!
@@ -33,7 +32,7 @@ class Landing extends Component {
                       </Link>
                     </div>
                 </div>
-            </div>
+            
           </div>
         </div>
       </div>
