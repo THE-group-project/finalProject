@@ -19,16 +19,16 @@ class Landing extends Component {
               <div className="jumbotron mx-auto border-0 rounded-0">
                     <div className="col-md-12 text-center">
                       <div className="title_tagline">
-                        <h1 className="display-3 mb-4">FitMii</h1>
-                        <p className="lead">
+                        <h1 className="display-3 title">FITNESS</h1>
+                        <p className="lead tagline mb-4">
                           {' '}
                           Find your training buddy!
                         </p>
                       </div>
-                      <Link to="/signup" className="btn btn-lg btn-outline mr-2">
+                      <Link to="/signup" className="btn btn-lg btn-outline-warning mr-2">
                         Sign Up
                       </Link>
-                      <Link to="/login" className="btn btn-lg">
+                      <Link to="/login" className="btn btn-lg btn-outline-dark">
                         Login
                       </Link>
                     </div>
