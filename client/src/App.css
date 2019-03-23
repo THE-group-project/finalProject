@@ -110,3 +110,7 @@ footer {
 .signup {
     height: calc(100vh - 7.5rem);
 }
+
+.editProfile {
+    margin-bottom: 100px;
+}

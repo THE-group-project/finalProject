@@ -7,6 +7,7 @@ import Spinner from '../common/Spinner';
 import Profile from './Profile';
 import ShowExperience from './ShowExperience';
 import ShowEducation from './ShowEducation';
+import DisplayProfile from '../profile/DisplayProfile';
 
 class Dashboard extends Component {
   componentDidMount() {
@@ -70,6 +71,12 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
+        {/* trying to display profile in dashboard page */}
+        {/* <div className="container">
+          <div className="row">
+            <DisplayProfile />
+          </div>
+        </div> */}
       </div>
     );
   }

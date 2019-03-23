@@ -250,7 +250,7 @@ class EditProfile extends Component {
                 <input
                   type="submit"
                   value="Submit"
-                  className="btn mt-4"
+                  className="btn mt-4 mb-4"
                 />
               </form>
             </div>
