@@ -49,7 +49,7 @@ class Signup extends Component {
 
     return (
         <div className="signup mt-5">
-          <div className="container">
+          <div className="container mb-5">
             <div className="row mx-0">
               <div className="col-md-8 m-auto">
                 <h1 className="display-4 text-center">Sign Up</h1>
@@ -93,7 +93,7 @@ class Signup extends Component {
                   />
                   <input
                     type="submit"
-                    className="btn mt-4"
+                    className="btn mt-4 mb-5"
                   />
                 </form>
               </div>
