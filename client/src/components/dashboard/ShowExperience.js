@@ -33,20 +33,21 @@ class ShowExperience extends Component {
     ));
 
     return (
-      <div>
-        <h3 className="mb-4">Experience</h3>
-        <table className="table">
-          <thead>
-            <tr>
-              <th>Company</th>
-              <th>Title</th>
-              <th>Years</th>
-              <th />
-            </tr>
-            {experience}
-          </thead>
-        </table>
-      </div>
+      null
+      // <div>
+      //   <h3 className="mb-4">Experience</h3>
+      //   <table className="table">
+      //     <thead>
+      //       <tr>
+      //         <th>Company</th>
+      //         <th>Title</th>
+      //         <th>Years</th>
+      //         <th />
+      //       </tr>
+      //       {experience}
+      //     </thead>
+      //   </table>
+      // </div>
     );
   }
 }

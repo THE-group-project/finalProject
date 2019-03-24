@@ -8,7 +8,7 @@ class ProfileHeader extends Component {
     return (
       <div className="row">
         <div className="col-md-12">
-          <div className="card card-body text-white mb-3">
+          <div className="card card-body bg-info text-white mb-3">
             <div className="row">
               <div className="col-4 col-md-3 m-auto">
                 <img
@@ -21,9 +21,9 @@ class ProfileHeader extends Component {
             <div className="text-center">
               <div>
                 <h1 className="display-4 text-center">{profile.user.name}</h1>
-                {/* <p className="lead text-center">
+                <p className="lead text-center">
                   {profile.experienceLevel} of experience
-                </p> */}
+                </p>
                 <p className="lead text-center font-weight-bold">
                   {isEmpty(profile.location) ? null : <p>{profile.location}</p>}
                 </p>

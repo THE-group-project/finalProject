@@ -26,8 +26,10 @@ class DisplayProfile extends Component {
         <div>
           <div className="row">
             <div className="col-md-6">
-              <Link to="/profiles" className="text-warning mb-3 float-left">
-                Back to Profiles
+              <Link to="/profiles" className="text-info mb-3 float-left">
+                <span style={{ color: 'white' }}>
+                  <i className="fas fa-arrow-circle-left" /> Back to Buddies
+                </span>
               </Link>
             </div>
           </div>
