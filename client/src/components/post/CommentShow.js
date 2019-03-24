@@ -10,7 +10,7 @@ class CommentShow extends Component {
   render() {
     const { auth, postId, comment } = this.props;
     return (
-      <div className="card card-body mb-3">
+      <div className="card card-body mb-5">
         <div className="row">
           <div className="col-md-2">
             <img
