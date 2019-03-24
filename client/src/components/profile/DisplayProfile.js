@@ -23,7 +23,7 @@ class DisplayProfile extends Component {
       profileContent = <Spinner />;
     } else {
       profileContent = (
-        <div>
+        <div className="mb-5">
           <div className="row">
             <div className="col-md-6">
               <Link to="/profiles" className="text-info mb-3 float-left">
@@ -36,10 +36,10 @@ class DisplayProfile extends Component {
           {/* pass profile from parent component */}
           <ProfileHeader profile={profile} />
           <ProfileAbout profile={profile} />
-          <ProfileCreds
+          {/* <ProfileCreds
             experience={profile.experience}
             education={profile.education}
-          />
+          /> */}
         </div>
       );
     }

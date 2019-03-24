@@ -6,7 +6,7 @@ class CommentFeed extends Component {
   render() {
     const { comments, postId } = this.props;
     return comments.map(comment => (
-      <CommentShow key={comment._id} comment={comment} postId={postId} />
+        <CommentShow key={comment._id} comment={comment} postId={postId} />
     ));
   }
 }
