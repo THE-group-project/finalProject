@@ -146,11 +146,11 @@ class EditProfile extends Component {
       );
     }
     const options = [
-      { label: '> 1 year', value: '> 1 year' },
-      { label: '1-2 years', value: '1-2 years' },
-      { label: '3-4 years', value: '3-4 years' },
-      { label: '5+ years', value: '5+ years' },
-      { label: 'Student or Learning', value: 'Student or Learning' }
+      { label: '* What fitness category best describes you?', value: 0 },
+      { label: 'Casual/Recreational', value: 'Casual/Recreational' },
+      { label: 'Intermediate', value: 'Intermediate' },
+      { label: 'Advanced/Athletic', value: 'Advanced/Athletic' },
+      { label: 'Trainer/Certified Trainer', value: 'Trainer/Certified Trainer' },
     ];
 
     return (
@@ -171,15 +171,15 @@ class EditProfile extends Component {
                   onChange={this.onChange}
                   error={errors.handle}
                 />
-                {/* <SelectList
+                <SelectList
                   placeholder="Experience Level"
                   name="experienceLevel"
                   value={this.state.experienceLevel}
                   onChange={this.onChange}
                   options={options}
                   error={errors.experienceLevel}
-                  info="This gives us an idea of where you might be in your career"
-                /> */}
+                  info="This will be displayed on your profile to other users"
+                />
                 <TextField
                   placeholder="Website"
                   name="website"
@@ -194,13 +194,13 @@ class EditProfile extends Component {
                   onChange={this.onChange}
                   error={errors.location}
                 />
-                {/* <TextField
+                <TextField
                   placeholder="Company"
                   name="company"
                   value={this.state.company}
                   onChange={this.onChange}
                   error={errors.company}
-                /> */}
+                />
                 <TextField
                   placeholder="Skills"
                   name="skills"
@@ -209,14 +209,14 @@ class EditProfile extends Component {
                   error={errors.skills}
                   info="Please use comma separated values"
                 />
-                {/* <TextField
+                <TextField
                   placeholder="Specialty"
                   name="specialty"
                   value={this.state.specialty}
                   onChange={this.onChange}
                   error={errors.specialty}
                   info="If there's an area of training in which you specialize, please specify here"
-                /> */}
+                />
                 <TextField
                   placeholder="Favorite Quote"
                   name="favoriteQuote"
@@ -240,7 +240,7 @@ class EditProfile extends Component {
                         displaySocialInputs: !prevState.displaySocialInputs
                       }));
                     }}
-                    className="btn btn-sm"
+                    className="btn btn-outline-info btn-sm"
                   >
                     Add Social Media Links
                   </button>
@@ -250,7 +250,7 @@ class EditProfile extends Component {
                 <input
                   type="submit"
                   value="Submit"
-                  className="btn mt-4"
+                  className="btn btn-outline-info btn-block mt-4"
                 />
               </form>
             </div>

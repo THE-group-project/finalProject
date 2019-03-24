@@ -27,11 +27,11 @@ class Dashboard extends Component {
     } else {
       if (Object.keys(profile).length > 0) {
         dashboardContent = (
-          <div>
-            <p className="lead text-muted">
-              Hi,{' '}
-              <Link className="text-muted" to={`/profile/${profile.handle}`}>
-                {user.name}
+          <div className="text-center">
+            <p className="lead text-white mb-0 text-center greeting">
+              Hi,{' '} {user.name}! {' '} <br></br>
+              <Link className="text-dark viewProfile" to={`/profile/${profile.handle}`}>
+                <i className="fas fa-user-circle text-info" /> View Profile
               </Link>
             </p>
             <Profile />
@@ -40,7 +40,7 @@ class Dashboard extends Component {
             <div style={{ marginBottom: '60px' }} />
             <button
               onClick={this.onDeleteClick.bind(this)}
-              className="btn btn-outline-danger"
+              className="btn btn-outline-danger deleteAcc"
             >
               Delete Account
             </button>
@@ -48,13 +48,13 @@ class Dashboard extends Component {
         );
       } else {
         dashboardContent = (
-          <div>
-            {/* <p className="lead text-muted">Hi, {user.name}</p> */}
-            {/* <p>
-              Next, set up your Profile.
-            </p> */}
-            <Link to="/create-profile" className="btn">
-              Edit Profile
+          <div className="text-center">
+            <p className="lead text-white text-center greeting">Hi, {user.name}!</p>
+            <p className="looksLike">
+              It looks like you haven't set up a profile yet. You should...
+            </p>
+            <Link to="/create-profile" className="btn btn-lg btn-info mt-2">
+              Create Profile
             </Link>
           </div>
         );
@@ -64,9 +64,11 @@ class Dashboard extends Component {
       <div className="dashboard">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
-              <h1 className="display-4">Welcome {user.name}!</h1>
-              {dashboardContent}
+            <div className="jumbotron mx-auto border-0 rounded-0">
+              <div className="col-md-12">
+                <h1 className="display-5 text-center dashboardTitle">MY DASHBOARD</h1>
+                {dashboardContent}
+              </div>
             </div>
           </div>
         </div>

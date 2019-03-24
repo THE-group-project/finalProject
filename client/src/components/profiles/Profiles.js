@@ -22,7 +22,7 @@ class Profiles extends Component {
           <ShowProfile key={profile._id} profile={profile} />
         ));
       } else {
-        profileContent = <h4>No profiles found</h4>;
+        profileContent = <h4>No buddy profiles found :(</h4>;
       }
     }
 
@@ -31,8 +31,8 @@ class Profiles extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="display-4">Buddy Profiles</h1>
-              <p className="lead">Connect with other your fellow Buddies!</p>
+              <h1 className="display-4 text-center">Buddy Profiles</h1>
+              <p className="lead text-center">Connect with other buddies!</p>
               {profileContent}
             </div>
           </div>

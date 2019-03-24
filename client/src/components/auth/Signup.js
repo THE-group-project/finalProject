@@ -48,58 +48,59 @@ class Signup extends Component {
     const { errors } = this.state;
 
     return (
-        <div className="signup mt-5">
-          <div className="container mb-5">
-            <div className="row mx-0">
-              <div className="col-md-8 m-auto">
-                <h1 className="display-4">Sign Up</h1>
-                <p className="lead">
-                  Create your Profile
-                </p>
-                <form onSubmit={this.onSubmit}>
-                  <TextField
-                    placeholder="Name"
-                    name="name"
-                    value={this.state.name}
-                    onChange={this.onChange}
-                    error={errors.name}
-                  />
+      <div className="signup">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 m-auto">
+              <h1 className="display-4 text-center">Sign Up</h1>
+              <p className="lead text-center">
+                Create your Persistence account
+              </p>
+              <form onSubmit={this.onSubmit}>
+                <TextField
+                  placeholder="Name"
+                  name="name"
+                  value={this.state.name}
+                  onChange={this.onChange}
+                  error={errors.name}
+                />
 
-                  <TextField
-                    placeholder="Email"
-                    name="email"
-                    type="email"
-                    value={this.state.email}
-                    onChange={this.onChange}
-                    error={errors.email}
-                    // info="Extra info?"
-                  />
+                <TextField
+                  placeholder="Email"
+                  name="email"
+                  type="email"
+                  value={this.state.email}
+                  onChange={this.onChange}
+                  error={errors.email}
+                  info="This site uses Gravatar so if you want a profile image, use a
+                  Gravatar email"
+                />
 
-                  <TextField
-                    placeholder="Password"
-                    name="password"
-                    type="password"
-                    value={this.state.password}
-                    onChange={this.onChange}
-                    error={errors.password}
-                  />
-                  <TextField
-                    placeholder="Confirm Password"
-                    name="password2"
-                    type="password"
-                    value={this.state.password2}
-                    onChange={this.onChange}
-                    error={errors.password2}
-                  />
-                  <input
-                    type="submit"
-                    className="btn mt-4 mb-5"
-                  />
-                </form>
-              </div>
+                <TextField
+                  placeholder="Password"
+                  name="password"
+                  type="password"
+                  value={this.state.password}
+                  onChange={this.onChange}
+                  error={errors.password}
+                />
+                <TextField
+                  placeholder="Confirm Password"
+                  name="password2"
+                  type="password"
+                  value={this.state.password2}
+                  onChange={this.onChange}
+                  error={errors.password2}
+                />
+                <input
+                  type="submit"
+                  className="btn btn-outline-info btn-block mt-4"
+                />
+              </form>
             </div>
           </div>
         </div>
+      </div>
     );
   }
 }

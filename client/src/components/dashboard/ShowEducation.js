@@ -33,20 +33,21 @@ class ShowEducation extends Component {
     ));
 
     return (
-      <div>
-        <h3 className="mb-4">Education</h3>
-        <table className="table">
-          <thead>
-            <tr>
-              <th>School</th>
-              <th>Degree</th>
-              <th>Years</th>
-              <th />
-            </tr>
-            {education}
-          </thead>
-        </table>
-      </div>
+      null
+      // <div>
+      //   <h3 className="mb-4">Education</h3>
+      //   <table className="table">
+      //     <thead>
+      //       <tr>
+      //         <th>School</th>
+      //         <th>Degree</th>
+      //         <th>Years</th>
+      //         <th />
+      //       </tr>
+      //       {education}
+      //     </thead>
+      //   </table>
+      // </div>
     );
   }
 }

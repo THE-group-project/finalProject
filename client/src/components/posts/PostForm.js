@@ -43,22 +43,22 @@ class PostForm extends Component {
     return (
       <div className="post-form mb-3">
         <div className="card card-info">
-          <div className="card-header text-dark">
-            Have an event in mind? Let your Buddies know!
+          <div className="card-header bg-info text-white">
+            Share your event idea with the community...
           </div>
           <div className="card-body">
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
                 <TextArea
-                  placeholder="create a post"
+                  placeholder="..."
                   name="content"
                   value={this.state.content}
                   onChange={this.onChange}
                   error={errors.content}
                 />
               </div>
-              <button type="submit" className="btn">
-                Submit
+              <button type="submit" className="btn btn-outline-info">
+                Post
               </button>
             </form>
           </div>

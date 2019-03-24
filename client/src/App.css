@@ -1,112 +1,152 @@
 @font-face {
-    font-family: cooperHewitt;
-    src: url(./fonts/CooperHewitt-Medium.woff);
+  font-family: cooperHewitt;
+  src: url(./fonts/CooperHewitt-Medium.woff);
 }
 
 @font-face {
-    font-family: cooperHewittBold;
-    src: url(./fonts/CooperHewitt-Bold.woff);
+  font-family: cooperHewittBold;
+  src: url(./fonts/CooperHewitt-Bold.woff);
 }
 
 @font-face {
-    font-family: cooperHewittLight;
-    src: url(./fonts/CooperHewitt-Light.woff);
+  font-family: cooperHewittLight;
+  src: url(./fonts/CooperHewitt-Light.woff);
 }
 
 @font-face {
-    font-family: cooperHewittItalic;
-    src: url(./fonts/CooperHewitt-MediumItalic.woff);
+  font-family: cooperHewittItalic;
+  src: url(./fonts/CooperHewitt-MediumItalic.woff);
 }
 
 * {
-    color: black;
+  color: black;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 body {
-    /* position: relative;
-    background-color: #e98074;
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - 7.5rem); */
-    position: relative;
-    background: url("./images/LongrunFEATURE.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - 7.5rem);
+  /* position: relative;
+  background-color: #e98074;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 7.5rem); */
+  position: relative;
+  background: url("./images/LongrunFEATURE.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 7.5rem);
+  margin-bottom: 500px;
 }
-  
+
+/* body {
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
+} */
+
 /* .landing { */
-    /* position: relative;
-    background: url("./images/LongrunFEATURE.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - 7.5rem); */
-    /* min-height: 450px; */
-    /* margin-top: -24px; */
-    /* margin-bottom: -50px; */
+  /* position: relative;
+  background: url("./images/LongrunFEATURE.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 7.5rem); */
+  /* min-height: 450px; */
+  /* margin-top: -24px; */
+  /* margin-bottom: -50px; */
 /* } */
 
 /* .landing-inner {
-    background-color: grey;
-    margin: 40px 100px 40px 100px;
+  background-color: grey;
+  margin: 40px 100px 40px 100px;
 } */
 
 .navbar {
-    /* background-color: black; */
-    /* background-color: #d8c3a53f; */
-    background: #5a5560; /* This is for ie8 and below */
-    background: #5a5560c2; 
-    /* background: black; */
-    /* background: rgba(0, 0, 0, 0.568);  */
+  /* background-color: black; */
+  /* background-color: #d8c3a53f; */
+  background: #5a5560; /* This is for ie8 and below */
+  background: #5a5560c2; 
+  /* background: black; */
+  /* background: rgba(0, 0, 0, 0.568);  */
 }
 
 .navbar-brand {
-    font-size: 36px;
-    color: #faed26;
-    font-family: cooperHewitt;
-    letter-spacing: 1px;
+  font-size: 36px;
+  color: #faed26;
+  font-family: cooperHewitt;
+  letter-spacing: 1px;
 }
 
 .nav-link {
-    color: white;
+  color: white;
+  font-size: 20px;
 }
 
 button.navbar-toggler.collapsed {
-    color: white;
+  color: white;
 }
 
 .jumbotron {
-    /* display: block; */
-    /* width: 1000px; */
-    background: #5a5560;
-    background: #5a55606b; 
+  /* display: block; */
+  /* width: 1000px; */
+  background: #5a5560;
+  background: #5a55606b; 
 }
 
 .title {
-    font-family: cooperHewitt;
-    color: #faed26;
+  font-family: cooperHewitt;
+  color: #faed26;
 }
 
 .tagline {
-    font-family: cooperHewitt;
-    color: white;
-    letter-spacing: 2px;
+  font-family: cooperHewitt;
+  color: white;
+  letter-spacing: 2px;
 }
 
 footer {
-    /* background-color: #F64C72; */
-    /* background-color: #8e8d8a81; */
-    background: #46344e; /* This is for ie8 and below */
-    background: #46344e59; 
-    bottom: 0;
-    width: 100%;
-    position: fixed;
+  /* background-color: #F64C72; */
+  /* background-color: #8e8d8a81; */
+  background: #46344e; /* This is for ie8 and below */
+  background: #46344e59; 
+  bottom: 0;
+  width: 100%;
+  position: fixed;
 }
 
 .signup {
-    height: calc(100vh - 7.5rem);
+  height: calc(100vh - 7.5rem);
+}
+
+.dashboardTitle {
+  font-family: cooperHewitt;
+  color: #faed26;
+}
+
+.greeting {
+  font-size: 40px;
+}
+
+.looksLike {
+  font-size: 25px;
+}
+
+.viewProfile {
+  font-size: 20px;
+  font-family: cooperHewitt;
+}
+
+.editProfileDash {
+  font-size: 20px;
+  font-family: cooperHewitt;
+}
+
+.editProfile {
+  margin-bottom: 100px;
+}
+
+.deleteAcc {
+  font-size: 25px;
+  font-weight: bold;
 }

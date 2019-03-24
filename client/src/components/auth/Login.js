@@ -45,17 +45,17 @@ class Login extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="login my-5">
+      <div className="login">
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className="display-4">Log In</h1>
-              <p className="lead">
-                Sign in to your Profile
+              <h1 className="display-4 text-center">Log In</h1>
+              <p className="lead text-center">
+                Sign in to your Persistence account
               </p>
               <form onSubmit={this.onSubmit}>
                 <TextField
-                  placeholder="Email"
+                  placeholder="DwayneJohnson@gmail.com"
                   name="email"
                   type="email"
                   value={this.state.email}
@@ -72,7 +72,7 @@ class Login extends Component {
                 />
                 <input
                   type="submit"
-                  className="btn mt-4"
+                  className="btn btn-outline-info btn-block mt-4"
                 />
               </form>
             </div>
