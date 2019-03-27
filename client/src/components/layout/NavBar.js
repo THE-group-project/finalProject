@@ -77,18 +77,6 @@ class NavBar extends Component {
                   Buddies
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  {' '}
-                  Gyms
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  {' '}
-                  Workouts
-                </Link>
-              </li>
             </ul>
             {isAuthenticated ? authLinks : guestLinks}
           </div>

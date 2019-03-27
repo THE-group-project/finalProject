@@ -65,7 +65,7 @@ body.fade-out {
     /* background-color: black; */
     /* background-color: #d8c3a53f; */
     background: #5a5560; /* This is for ie8 and below */
-    background: #5a556000; 
+    background: #5a556023; 
     /* background: black; */
     /* background: rgba(0, 0, 0, 0.568);  */
 }
@@ -106,8 +106,9 @@ button.navbar-toggler.collapsed {
 footer {
     /* background-color: #F64C72; */
     /* background-color: #8e8d8a81; */
-    background: #46344e; /* This is for ie8 and below */
-    background: #46344e59; 
+    
+    background: #000000; /* This is for ie8 and below */
+    background: #4b444441; 
     bottom: 0;
     width: 100%;
     position: fixed;
