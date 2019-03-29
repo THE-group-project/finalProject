@@ -57,7 +57,7 @@ class PostShow extends Component {
                   />
                   <span className="badge badge-light">{post.likes.length}</span>
                 </button>
-                <Link to={`/post/${post._id}`} className="btn btn-info mr-1">
+                <Link to={`/post/${post._id}`} className="btn btn-warning mr-1">
                   Comments
                 </Link>
                 {post.user === auth.user.id ? (

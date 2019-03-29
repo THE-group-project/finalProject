@@ -30,7 +30,7 @@ class NavBar extends Component {
           <a
             href=""
             onClick={this.onLogoutClick.bind(this)}
-            className="nav-link"
+            className="nav-link logoutBtn"
           >
             <img
               className="rounded-circle"

@@ -7,7 +7,7 @@ class ShowProfile extends Component {
   render() {
     const { profile } = this.props;
     return (
-      <div className="card card-body bg-white border border-info mb-3">
+      <div className="card card-body bg-white border border-warning mb-3">
         <div className="row">
           <div className="col-2">
             <img className="rounded-cirlce" src={profile.user.avatar} alt="" />
@@ -19,7 +19,7 @@ class ShowProfile extends Component {
                 <span>{profile.location}</span>
               )}
             </p>
-            <Link to={`/profile/${profile.handle}`} className="text-info">
+            <Link to={`/profile/${profile.handle}`} className="text-warning">
               View Profile
             </Link>
           </div>

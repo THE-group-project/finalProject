@@ -48,33 +48,35 @@ class Login extends Component {
       <div className="login">
         <div className="container">
           <div className="row">
-            <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Log In</h1>
-              <p className="lead text-center">
-                Sign in to your Persistence account
-              </p>
-              <form onSubmit={this.onSubmit}>
-                <TextField
-                  placeholder="DwayneJohnson@gmail.com"
-                  name="email"
-                  type="email"
-                  value={this.state.email}
-                  onChange={this.onChange}
-                  error={errors.email}
-                />
-                <TextField
-                  placeholder="Password"
-                  name="password"
-                  type="password"
-                  value={this.state.password}
-                  onChange={this.onChange}
-                  error={errors.password}
-                />
-                <input
-                  type="submit"
-                  className="btn btn-outline-info btn-block mt-4"
-                />
-              </form>
+            <div className="jumbotron col-md-8 mx-auto border-0 rounded-0">
+              <div className="col-md-10 m-auto">
+                <h1 className="display-4 text-center text-success logIn">LOGIN</h1>
+                <p className="lead text-center">
+                  Login to your account
+                </p>
+                <form onSubmit={this.onSubmit}>
+                  <TextField
+                    placeholder="Email"
+                    name="email"
+                    type="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                    error={errors.email}
+                  />
+                  <TextField
+                    placeholder="Password"
+                    name="password"
+                    type="password"
+                    value={this.state.password}
+                    onChange={this.onChange}
+                    error={errors.password}
+                  />
+                  <input
+                    type="submit"
+                    className="btn btn-success btn-block mt-4"
+                  />
+                </form>
+              </div>
             </div>
           </div>
         </div>

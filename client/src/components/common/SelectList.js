@@ -21,7 +21,7 @@ const SelectList = ({ name, value, error, info, options, onChange }) => {
         {selectOptions}
       </select>
 
-      {info && <small className="form-text text-muted">{info}</small>}
+      {info && <small className="form-text text-light">{info}</small>}
       {error && <div className="invalid-feedback">{error}</div>}
     </div>
   );

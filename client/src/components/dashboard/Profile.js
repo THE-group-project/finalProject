@@ -6,8 +6,8 @@ const Profile = () => {
     // <div className="d-flex flex-row-reverse">
     <div className="text-center">
       <p className="btn-group mb-4 greeting" role="group">
-        <Link to="/edit-profile" className="btn btn-white text-dark editProfileDash">
-          <i className="fas fa-edit text-info" /> Edit Profile
+        <Link to="/edit-profile" className="btn btn-light text-dark editProfileDash">
+          <i className="fas fa-edit" /> Edit Profile
         </Link>
         {/* <Link to="/add-experience" className="btn btn-white text-dark">
           <i className="fab fa-black-tie text-info mr-1" />

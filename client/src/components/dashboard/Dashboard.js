@@ -28,16 +28,16 @@ class Dashboard extends Component {
       if (Object.keys(profile).length > 0) {
         dashboardContent = (
           <div className="text-center">
-            <p className="lead text-white mb-0 text-center greeting">
+            <p className="lead text-white mb-3 text-center greeting">
               Hi,{' '} {user.name}! {' '} <br></br>
-              <Link className="text-dark viewProfile" to={`/profile/${profile.handle}`}>
-                <i className="fas fa-user-circle text-info" /> View Profile
+              <Link className="btn btn-dark viewProfile mt-5 mb-2" to={`/profile/${profile.handle}`}>
+                <i className="fas fa-user-circle" /> View Profile
               </Link>
             </p>
             <Profile />
             <ShowExperience experience={profile.experience} />
             <ShowEducation education={profile.education} />
-            <div style={{ marginBottom: '60px' }} />
+            <div style={{ marginBottom: '100px' }} />
             <button
               onClick={this.onDeleteClick.bind(this)}
               className="btn btn-outline-danger deleteAcc"
@@ -49,11 +49,11 @@ class Dashboard extends Component {
       } else {
         dashboardContent = (
           <div className="text-center">
-            <p className="lead text-white text-center greeting">Hi, {user.name}!</p>
+            <p className="lead text-white mb-3 text-center greeting">Hi, {user.name}!</p>
             <p className="looksLike">
-              It looks like you haven't set up a profile yet. You should...
+              It looks like you haven't set up a profile yet. You should!
             </p>
-            <Link to="/create-profile" className="btn btn-lg btn-info mt-2">
+            <Link className="btn btn-lg btn-dark viewProfile mt-2 mb-2" to="/create-profile">
               Create Profile
             </Link>
           </div>
