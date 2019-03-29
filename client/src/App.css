@@ -32,8 +32,11 @@ body {
   background-size: cover;
   background-position: center;
   height: calc(100vh - 7.5rem); */
+
+  
   position: relative;
-  background: url("./images/LongrunFEATURE.jpg") no-repeat;
+  /* background: url("./images/LongrunFEATURE.jpg") no-repeat; */
+  background-color: #9b786f;
   background-size: cover;
   background-position: center;
   height: calc(100vh - 7.5rem);
@@ -76,11 +79,24 @@ body {
   color: #faed26;
   font-family: cooperHewitt;
   letter-spacing: 1px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.navbar-brand:hover {
+  color: yellow;
 }
 
 .nav-link {
   color: white;
   font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #faed26;
 }
 
 button.navbar-toggler.collapsed {
@@ -97,6 +113,11 @@ button.navbar-toggler.collapsed {
 .title {
   font-family: cooperHewitt;
   color: #faed26;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 .tagline {
@@ -116,12 +137,37 @@ footer {
 }
 
 .signup {
-  height: calc(100vh - 7.5rem);
+  /* height: calc(100vh - 7.5rem); */
+}
+
+.signUp {
+  font-family: cooperHewitt;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+  /* color: #faed26; */
+}
+
+.logIn {
+  font-family: cooperHewitt;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+  /* color: #faed26; */
 }
 
 .dashboardTitle {
   font-family: cooperHewitt;
   color: #faed26;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 .greeting {
@@ -137,6 +183,16 @@ footer {
   font-family: cooperHewitt;
 }
 
+.btn-dark {
+  background-color: #e25364 !important;
+  color: black;
+}
+
+.btn-dark:hover {
+  background-color: #df8690 !important;
+  color: rgb(44, 44, 44);
+}
+
 .editProfileDash {
   font-size: 20px;
   font-family: cooperHewitt;
@@ -147,6 +203,7 @@ footer {
 }
 
 .deleteAcc {
-  font-size: 25px;
+  font-size: 10px;
   font-weight: bold;
 }
+

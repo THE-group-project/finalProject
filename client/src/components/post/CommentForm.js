@@ -43,8 +43,8 @@ class CommentForm extends Component {
     const { errors } = this.state;
     return (
       <div className="post-form mb-3">
-        <div className="card card-info">
-          <div className="card-header bg-info text-white">Add a comment</div>
+        <div className="card card-warning">
+          <div className="card-header bg-warning text-white">Add a comment</div>
           <div className="card-body">
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
@@ -56,7 +56,7 @@ class CommentForm extends Component {
                   error={errors.content}
                 />
               </div>
-              <button type="submit" className="btn btn-outline-info">
+              <button type="submit" className="btn btn-outline-warning">
                 Submit
               </button>
             </form>

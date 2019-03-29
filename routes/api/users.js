@@ -26,10 +26,10 @@ router.post('/signup', (req, res) => {
       errors.email = 'email already exists';
       return res.status(400).json(errors);
     } else {
-      const avatar = gravatar.url('req.body.email', {
+      const avatar = gravatar.url(req.body.email, {
         s: '200',
         r: 'pg',
-        d: 'mm'
+        d: 'retro'
       });
 
       const newUser = new User({

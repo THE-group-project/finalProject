@@ -51,52 +51,54 @@ class Signup extends Component {
       <div className="signup">
         <div className="container">
           <div className="row">
-            <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Sign Up</h1>
-              <p className="lead text-center">
-                Create your Persistence account
-              </p>
-              <form onSubmit={this.onSubmit}>
-                <TextField
-                  placeholder="Name"
-                  name="name"
-                  value={this.state.name}
-                  onChange={this.onChange}
-                  error={errors.name}
-                />
+            <div className="jumbotron col-md-8 mx-auto border-0 rounded-0">
+              <div className="col-md-10 m-auto">
+                <h1 className="display-4 text-center text-danger signUp">SIGN UP</h1>
+                <p className="lead text-center">
+                  Create your account
+                </p>
+                <form onSubmit={this.onSubmit}>
+                  <TextField
+                    placeholder="*Name"
+                    name="name"
+                    value={this.state.name}
+                    onChange={this.onChange}
+                    error={errors.name}
+                  />
 
-                <TextField
-                  placeholder="Email"
-                  name="email"
-                  type="email"
-                  value={this.state.email}
-                  onChange={this.onChange}
-                  error={errors.email}
-                  info="This site uses Gravatar so if you want a profile image, use a
-                  Gravatar email"
-                />
+                  <TextField
+                    placeholder="*Email"
+                    name="email"
+                    type="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                    error={errors.email}
+                    // info="This site uses Gravatar so if you want a profile image, use a
+                    // Gravatar email"
+                  />
 
-                <TextField
-                  placeholder="Password"
-                  name="password"
-                  type="password"
-                  value={this.state.password}
-                  onChange={this.onChange}
-                  error={errors.password}
-                />
-                <TextField
-                  placeholder="Confirm Password"
-                  name="password2"
-                  type="password"
-                  value={this.state.password2}
-                  onChange={this.onChange}
-                  error={errors.password2}
-                />
-                <input
-                  type="submit"
-                  className="btn btn-outline-info btn-block mt-4"
-                />
-              </form>
+                  <TextField
+                    placeholder="*Password"
+                    name="password"
+                    type="password"
+                    value={this.state.password}
+                    onChange={this.onChange}
+                    error={errors.password}
+                  />
+                  <TextField
+                    placeholder="*Confirm Password"
+                    name="password2"
+                    type="password"
+                    value={this.state.password2}
+                    onChange={this.onChange}
+                    error={errors.password2}
+                  />
+                  <input
+                    type="submit"
+                    className="btn btn-danger btn-block mt-4"
+                  />
+                </form>
+              </div>
             </div>
           </div>
         </div>

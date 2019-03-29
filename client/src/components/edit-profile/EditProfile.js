@@ -157,102 +157,109 @@ class EditProfile extends Component {
       <div className="create-profile">
         <div className="container">
           <div className="row">
-            <div className="col-md-8 m-auto">
-              <Link to="/dashboard" className="text-info">
-                Back
-              </Link>
-              <h1 className="display-4 text-center">Edit Your Profile</h1>
-              <br />
-              <form onSubmit={this.onSubmit}>
-                <TextField
-                  placeholder="Profile Handle"
-                  name="handle"
-                  value={this.state.handle}
-                  onChange={this.onChange}
-                  error={errors.handle}
-                />
-                <SelectList
-                  placeholder="Experience Level"
-                  name="experienceLevel"
-                  value={this.state.experienceLevel}
-                  onChange={this.onChange}
-                  options={options}
-                  error={errors.experienceLevel}
-                  info="This will be displayed on your profile to other users"
-                />
-                <TextField
-                  placeholder="Website"
-                  name="website"
-                  value={this.state.website}
-                  onChange={this.onChange}
-                  error={errors.website}
-                />
-                <TextField
-                  placeholder="Location"
-                  name="location"
-                  value={this.state.location}
-                  onChange={this.onChange}
-                  error={errors.location}
-                />
-                <TextField
-                  placeholder="Company"
-                  name="company"
-                  value={this.state.company}
-                  onChange={this.onChange}
-                  error={errors.company}
-                />
-                <TextField
-                  placeholder="Skills"
-                  name="skills"
-                  value={this.state.skills}
-                  onChange={this.onChange}
-                  error={errors.skills}
-                  info="Please use comma separated values"
-                />
-                <TextField
-                  placeholder="Specialty"
-                  name="specialty"
-                  value={this.state.specialty}
-                  onChange={this.onChange}
-                  error={errors.specialty}
-                  info="If there's an area of training in which you specialize, please specify here"
-                />
-                <TextField
-                  placeholder="Favorite Quote"
-                  name="favoriteQuote"
-                  value={this.state.favoriteQuote}
-                  onChange={this.onChange}
-                  error={errors.favoriteQuote}
-                />
-                <TextArea
-                  placeholder="Bio"
-                  name="bio"
-                  value={this.state.bio}
-                  onChange={this.onChange}
-                  error={errors.bio}
-                  info="Tell us a short description of who you are"
-                />
-                <div className="mb-3">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      this.setState(prevState => ({
-                        displaySocialInputs: !prevState.displaySocialInputs
-                      }));
-                    }}
-                    className="btn btn-outline-info btn-sm"
-                  >
-                    Add Social Media Links
-                  </button>
-                  <span className="text-muted">(Optional)</span>
-                </div>
-                {socialInputs}
-                <input
-                  type="submit"
-                  value="Submit"
-                  className="btn btn-outline-info btn-block mt-4"
-                />
-              </form>
+            <Link to="/dashboard" className="text-warning mb-3 float-left">
+              <span style={{ color: 'white' }}>
+                <i className="fas fa-arrow-circle-left" /> Back to Buddies
+              </span>
+            </Link>
+            <div className="jumbotron col-md-12 mx-auto border-0 rounded-0">
+              <div className="col-md-8 m-auto">
+                {/* <Link to="/dashboard" className="text-info">
+                  Back
+                </Link> */}
+                <h1 className="display-4 text-center">Edit Your Profile</h1>
+                <br />
+                <form onSubmit={this.onSubmit}>
+                  <TextField
+                    placeholder="Profile Handle"
+                    name="handle"
+                    value={this.state.handle}
+                    onChange={this.onChange}
+                    error={errors.handle}
+                  />
+                  <SelectList
+                    placeholder="Experience Level"
+                    name="experienceLevel"
+                    value={this.state.experienceLevel}
+                    onChange={this.onChange}
+                    options={options}
+                    error={errors.experienceLevel}
+                    info="This will be displayed on your profile to other users"
+                  />
+                  <TextField
+                    placeholder="Website"
+                    name="website"
+                    value={this.state.website}
+                    onChange={this.onChange}
+                    error={errors.website}
+                  />
+                  <TextField
+                    placeholder="Location"
+                    name="location"
+                    value={this.state.location}
+                    onChange={this.onChange}
+                    error={errors.location}
+                  />
+                  <TextField
+                    placeholder="Company"
+                    name="company"
+                    value={this.state.company}
+                    onChange={this.onChange}
+                    error={errors.company}
+                  />
+                  <TextField
+                    placeholder="Skills"
+                    name="skills"
+                    value={this.state.skills}
+                    onChange={this.onChange}
+                    error={errors.skills}
+                    info="Please use comma separated values"
+                  />
+                  <TextField
+                    placeholder="Specialty"
+                    name="specialty"
+                    value={this.state.specialty}
+                    onChange={this.onChange}
+                    error={errors.specialty}
+                    info="If there's an area of training in which you specialize, please specify here"
+                  />
+                  <TextField
+                    placeholder="Favorite Quote"
+                    name="favoriteQuote"
+                    value={this.state.favoriteQuote}
+                    onChange={this.onChange}
+                    error={errors.favoriteQuote}
+                  />
+                  <TextArea
+                    placeholder="Bio"
+                    name="bio"
+                    value={this.state.bio}
+                    onChange={this.onChange}
+                    error={errors.bio}
+                    info="Tell us a short description of who you are"
+                  />
+                  <div className="mb-3">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        this.setState(prevState => ({
+                          displaySocialInputs: !prevState.displaySocialInputs
+                        }));
+                      }}
+                      className="btn btn-dark btn-sm"
+                    >
+                      Add Social Media Links
+                    </button>
+                    <span className="text-light">(Optional)</span>
+                  </div>
+                  {socialInputs}
+                  <input
+                    type="submit"
+                    value="Submit"
+                    className="btn btn-warning btn-block mt-4"
+                  />
+                </form>
+              </div>
             </div>
           </div>
         </div>
