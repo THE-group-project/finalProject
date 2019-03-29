@@ -63,7 +63,7 @@ class NavBar extends Component {
       <nav className="navbar navbar-expand-sm mb-5">
         <div className="container">
           <Link className="navbar-brand mt-1" to="/">
-            FITNESS
+            GYMPALS
           </Link>
           <button
             className="navbar-toggler navbar-dark"

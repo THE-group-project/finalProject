@@ -171,7 +171,7 @@ class EditProfile extends Component {
                 <br />
                 <form onSubmit={this.onSubmit}>
                   <TextField
-                    placeholder="Profile Handle"
+                    placeholder="Username"
                     name="handle"
                     value={this.state.handle}
                     onChange={this.onChange}
@@ -200,15 +200,15 @@ class EditProfile extends Component {
                     onChange={this.onChange}
                     error={errors.location}
                   />
-                  <TextField
+                  {/* <TextField
                     placeholder="Company"
                     name="company"
                     value={this.state.company}
                     onChange={this.onChange}
                     error={errors.company}
-                  />
+                  /> */}
                   <TextField
-                    placeholder="Skills"
+                    placeholder="Favorite Exercises"
                     name="skills"
                     value={this.state.skills}
                     onChange={this.onChange}
@@ -216,7 +216,7 @@ class EditProfile extends Component {
                     info="Please use comma separated values"
                   />
                   <TextField
-                    placeholder="Specialty"
+                    placeholder="Hobbies"
                     name="specialty"
                     value={this.state.specialty}
                     onChange={this.onChange}
@@ -224,7 +224,7 @@ class EditProfile extends Component {
                     info="If there's an area of training in which you specialize, please specify here"
                   />
                   <TextField
-                    placeholder="Favorite Quote"
+                    placeholder="Email Contact (optional)"
                     name="favoriteQuote"
                     value={this.state.favoriteQuote}
                     onChange={this.onChange}

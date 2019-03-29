@@ -161,7 +161,7 @@ class CreateProfile extends Component {
                     // info="If there's an area of training in which you specialize, please specify here"
                   />
                   <TextField
-                    placeholder="Favorite Quote"
+                    placeholder="Email Contact (optional)"
                     name="favoriteQuote"
                     value={this.state.favoriteQuote}
                     onChange={this.onChange}
