@@ -35,8 +35,10 @@ body {
 
   
   position: relative;
-  /* background: url("./images/LongrunFEATURE.jpg") no-repeat; */
-  background-color: #9b786f;
+  background: url("./images/LongrunFEATURE.jpg");
+  /* background-repeat: repeat; */
+  background-attachment: fixed;
+  /* background-color: #9b786f; */
   background-size: cover;
   background-position: center;
   height: calc(100vh - 7.5rem);
