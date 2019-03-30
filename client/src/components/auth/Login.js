@@ -50,7 +50,7 @@ class Login extends Component {
           <div className="row">
             <div className="jumbotron col-md-8 mx-auto border-0 rounded-0">
               <div className="col-md-10 m-auto">
-                <h1 className="display-4 text-center text-success logIn">LOGIN</h1>
+                <h1 className="display-4 text-center logIn">LOGIN</h1>
                 <p className="lead text-center">
                   Login to your account
                 </p>

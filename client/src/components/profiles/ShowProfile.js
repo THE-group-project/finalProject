@@ -7,12 +7,12 @@ class ShowProfile extends Component {
   render() {
     const { profile } = this.props;
     return (
-      <div className="card card-body bg-white border border-warning mb-3">
+      <div className="card card-body bg-white border mb-3">
         <div className="row">
-          <div className="col-2">
-            <img className="rounded-cirlce" src={profile.user.avatar} alt="" />
+          <div className="col-3 col-lg-3 col-md-3 col-sm-6 mt-md-3 mt-sm-1">
+            <img className="rounded-circle" src={profile.user.avatar} alt="" />
           </div>
-          <div className="col-lg-6 col-md-4 col-8">
+          <div className="col-4 col-lg-3 col-md-3 userName mt-md-5">
             <h3 className="font-weight-normal">{profile.user.name}</h3>
             <p className="lead">
               {isEmpty(profile.location) ? null : (
@@ -23,8 +23,8 @@ class ShowProfile extends Component {
               View Profile
             </Link>
           </div>
-          <div className="col-md-4 d-none d-md-block">
-            <h4 className="font-weight-normal">Skills</h4>
+          <div className="col-6 col-md-6 d-none d-md-block">
+            <h4 className="font-weight-normal text-center">Favorite Exercises</h4>
             <ul className="list-group-flush">
               {/* display only up to 4 skills */}
               {profile.skills.slice(0, 4).map((skill, index) => (

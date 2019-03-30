@@ -35,7 +35,9 @@ class Post extends Component {
           <div className="row">
             <div className="col-md-12">
               <Link to="/feed" className="text text-warning mb-3">
-                Back to Posts
+                <span style={{ color: 'white' }}>
+                  <i className="fas fa-arrow-circle-left" /> Back to Posts
+                </span>
               </Link>
               <br />
               <br />

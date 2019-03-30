@@ -42,8 +42,8 @@ class PostForm extends Component {
     const { errors } = this.state;
     return (
       <div className="post-form mb-3">
-        <div className="card card-warning">
-          <div className="card-header bg-warning text-white">
+        <div className="card card-dark border-dark">
+          <div className="card-header bg-dark text-white">
             Share your event idea with the community...
           </div>
           <div className="card-body">
@@ -57,7 +57,7 @@ class PostForm extends Component {
                   error={errors.content}
                 />
               </div>
-              <button type="submit" className="btn btn-outline-warning">
+              <button type="submit" className="btn btn-outline-danger">
                 Post
               </button>
             </form>

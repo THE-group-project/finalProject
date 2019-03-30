@@ -159,7 +159,7 @@ class EditProfile extends Component {
           <div className="row">
             <Link to="/dashboard" className="text-warning mb-3 float-left">
               <span style={{ color: 'white' }}>
-                <i className="fas fa-arrow-circle-left" /> Back to Buddies
+                <i className="fas fa-arrow-circle-left" /> Back to your Dashboard
               </span>
             </Link>
             <div className="jumbotron col-md-12 mx-auto border-0 rounded-0">
@@ -167,11 +167,11 @@ class EditProfile extends Component {
                 {/* <Link to="/dashboard" className="text-info">
                   Back
                 </Link> */}
-                <h1 className="display-4 text-center">Edit Your Profile</h1>
+                <h1 className="display-4 text-center editYour">Edit Your Profile</h1>
                 <br />
                 <form onSubmit={this.onSubmit}>
                   <TextField
-                    placeholder="Profile Handle"
+                    placeholder="Username"
                     name="handle"
                     value={this.state.handle}
                     onChange={this.onChange}
@@ -186,13 +186,13 @@ class EditProfile extends Component {
                     error={errors.experienceLevel}
                     info="This will be displayed on your profile to other users"
                   />
-                  <TextField
+                  {/* <TextField
                     placeholder="Website"
                     name="website"
                     value={this.state.website}
                     onChange={this.onChange}
                     error={errors.website}
-                  />
+                  /> */}
                   <TextField
                     placeholder="Location"
                     name="location"
@@ -200,29 +200,29 @@ class EditProfile extends Component {
                     onChange={this.onChange}
                     error={errors.location}
                   />
-                  <TextField
+                  {/* <TextField
                     placeholder="Company"
                     name="company"
                     value={this.state.company}
                     onChange={this.onChange}
                     error={errors.company}
-                  />
+                  /> */}
                   <TextField
-                    placeholder="Skills"
+                    placeholder="Favorite Exercises"
                     name="skills"
                     value={this.state.skills}
                     onChange={this.onChange}
                     error={errors.skills}
                     info="Please use comma separated values"
                   />
-                  <TextField
-                    placeholder="Specialty"
+                  {/* <TextField
+                    placeholder="Hobbies"
                     name="specialty"
                     value={this.state.specialty}
                     onChange={this.onChange}
                     error={errors.specialty}
-                    info="If there's an area of training in which you specialize, please specify here"
-                  />
+                    // info="If there's an area of training in which you specialize, please specify here"
+                  /> */}
                   <TextField
                     placeholder="Favorite Quote"
                     name="favoriteQuote"
@@ -246,7 +246,7 @@ class EditProfile extends Component {
                           displaySocialInputs: !prevState.displaySocialInputs
                         }));
                       }}
-                      className="btn btn-dark btn-sm"
+                      className="btn btn-sm mr-1"
                     >
                       Add Social Media Links
                     </button>
@@ -256,7 +256,7 @@ class EditProfile extends Component {
                   <input
                     type="submit"
                     value="Submit"
-                    className="btn btn-warning btn-block mt-4"
+                    className="btn btn-dangers btn-block mt-4"
                   />
                 </form>
               </div>
