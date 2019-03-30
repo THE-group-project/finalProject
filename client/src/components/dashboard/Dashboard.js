@@ -30,7 +30,7 @@ class Dashboard extends Component {
           <div className="text-center">
             <p className="lead text-white mb-3 text-center greeting">
               Hi,{' '} {user.name}! {' '} <br></br>
-              <Link className="btn btn-dark viewProfile mt-5 mb-2" to={`/profile/${profile.handle}`}>
+              <Link className="btn btn-dark viewProfile mt-3 mb-1" to={`/profile/${profile.handle}`}>
                 <i className="fas fa-user-circle" /> View Profile
               </Link>
             </p>

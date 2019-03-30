@@ -53,7 +53,7 @@ class Signup extends Component {
           <div className="row">
             <div className="jumbotron col-md-8 mx-auto border-0 rounded-0">
               <div className="col-md-10 m-auto">
-                <h1 className="display-4 text-center text-danger signUp">SIGN UP</h1>
+                <h1 className="display-4 text-center signUp">SIGN UP</h1>
                 <p className="lead text-center">
                   Create your account
                 </p>
@@ -73,8 +73,8 @@ class Signup extends Component {
                     value={this.state.email}
                     onChange={this.onChange}
                     error={errors.email}
-                    // info="This site uses Gravatar so if you want a profile image, use a
-                    // Gravatar email"
+                    info="This site uses Gravatar so if you want a profile image, use a
+                    Gravatar email"
                   />
 
                   <TextField

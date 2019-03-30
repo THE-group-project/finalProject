@@ -16,14 +16,14 @@ class ProfileAbout extends Component {
     return (
       <div className="row">
         <div className="col-md-12">
-          <div className="card card-body bg-white mb-3">
-            <h3 className="text-center text-warning font-weight-light">
+          <div className="card card-body profileAbout mb-3">
+            <h3 className="text-center font-weight-heavy">
               A little about {firstName}
             </h3>
             <p className="lead">{profile.bio}</p>
             <hr />
-            <h3 className="text-center text-warning font-weight-light">
-              Skill Set
+            <h3 className="text-center font-weight-heavy">
+              Favorite Exercises
             </h3>
             <div className="row">
               <div className="d-flex flex-wrap justify-content-center align-items-center">

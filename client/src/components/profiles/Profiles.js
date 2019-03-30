@@ -30,11 +30,13 @@ class Profiles extends Component {
       <div className="profiles mb-5">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
-              <h1 className="display-4 text-center">Buddy Profiles</h1>
+            <div className="col-md-1"></div>
+            <div className="col-md-10">
+              <h1 className="display-4 text-center editYour">Buddy Profiles</h1>
               <p className="lead text-center">Connect with other buddies!</p>
               {profileContent}
             </div>
+            <div className="col-md-1"></div>
           </div>
         </div>
       </div>

@@ -104,7 +104,7 @@ class CreateProfile extends Component {
           <div className="row">
             <div className="jumbotron col-md-12 mx-auto border-0 rounded-0">
               <div className="col-md-8 m-auto">
-                <h1 className="display-4 text-center">Create Your Profile</h1>
+                <h1 className="display-4 text-center editYour">Create Your Profile</h1>
                 <br />
                 <form onSubmit={this.onSubmit}>
                   <TextField
@@ -152,16 +152,16 @@ class CreateProfile extends Component {
                     error={errors.skills}
                     info="*Please use comma separated values"
                   />
-                  <TextField
+                  {/* <TextField
                     placeholder="Hobbies"
                     name="specialty"
                     value={this.state.specialty}
                     onChange={this.onChange}
                     error={errors.specialty}
                     // info="If there's an area of training in which you specialize, please specify here"
-                  />
+                  /> */}
                   <TextField
-                    placeholder="Email Contact (optional)"
+                    placeholder="Favorite Quote"
                     name="favoriteQuote"
                     value={this.state.favoriteQuote}
                     onChange={this.onChange}
@@ -183,7 +183,7 @@ class CreateProfile extends Component {
                           displaySocialInputs: !prevState.displaySocialInputs
                         }));
                       }}
-                      className="btn btn-dark btn-sm"
+                      className="btn btn-sm mr-1"
                     >
                       Add Social Media Links
                     </button>
@@ -193,7 +193,7 @@ class CreateProfile extends Component {
                   <input
                     type="submit"
                     value="Submit"
-                    className="btn btn-warning btn-block mt-4"
+                    className="btn btn-danger btn-block mt-4"
                   />
                 </form>
               </div>
